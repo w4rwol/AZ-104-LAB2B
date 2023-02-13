@@ -84,11 +84,11 @@ En esta tarea, asignará la política Requerir una etiqueta integrada y su valor
 
 5. Especifique el **Ámbito** haciendo clic en el botón de puntos suspensivos y seleccionando los siguientes valores:
 
-  | Configuración	| Valor |
-  | - - | - - |
-  | Suscripción |	el nombre de la suscripción de Azure que está utilizando en este laboratorio
-  | Grupo de recursos | el nombre del grupo de recursos que contiene la cuenta de Cloud Shell que identificó en la tarea anterior |
-  | | |
+ | Configuración	| Valor |
+ | - - | - - |
+ | Suscripción |	el nombre de la suscripción de Azure que está utilizando en este laboratorio
+ | Grupo de recursos | el nombre del grupo de recursos que contiene la cuenta de Cloud Shell que identificó en la tarea anterior |
+ | | |
 
 **Nota :** un ámbito determina los recursos o grupos de recursos en los que se aplica la asignación de políticas. Puede asignar políticas en el nivel de grupo de administración, suscripción o grupo de recursos. También tiene la opción de especificar exclusiones, como suscripciones individuales, grupos de recursos o recursos (según el alcance de la asignación).
 
