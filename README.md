@@ -59,11 +59,11 @@ df
 
 7. Cree una etiqueta con la siguiente configuración y aplique su cambio:
 
-      | Configuración | Valor |
-      | - - | - - |
-      | Nombre | Role |
-      | Valor | Infra |
-      | | |
+    | Configuración | Valor |
+    | -- | -- |
+    | Nombre | Role |
+    | Valor | Infra |
+    | | |
 
 8. Vuelva a la hoja de la cuenta de almacenamiento. Revise la información de descripción general y tenga en cuenta que la nueva etiqueta no se asignó automáticamente a la cuenta de almacenamiento.
 
@@ -84,22 +84,22 @@ En esta tarea, asignará la política Requerir una etiqueta integrada y su valor
 
 5. Especifique el **Ámbito** haciendo clic en el botón de puntos suspensivos y seleccionando los siguientes valores:
 
-     | Configuración	| Valor |
-     | - - | - - |
-     | Suscripción |	el nombre de la suscripción de Azure que está utilizando en este laboratorio
-     | Grupo de recursos | el nombre del grupo de recursos que contiene la cuenta de Cloud Shell que identificó en la tarea anterior |
-     | | |
+    | Configuración | Valor |
+    | -- | -- |
+    | Suscripción |	el nombre de la suscripción de Azure que está utilizando en este laboratorio
+    | Grupo de recursos | el nombre del grupo de recursos que contiene la cuenta de Cloud Shell que identificó en la tarea anterior |
+    | | |
 
 **Nota :** un ámbito determina los recursos o grupos de recursos en los que se aplica la asignación de políticas. Puede asignar políticas en el nivel de grupo de administración, suscripción o grupo de recursos. También tiene la opción de especificar exclusiones, como suscripciones individuales, grupos de recursos o recursos (según el alcance de la asignación).
 
 6. Configure las propiedades básicas de la tarea especificando los siguientes ajustes (deje los demás con sus valores predeterminados):
 
-| Configuración	| Valor |
-| - - | - - |
-| Nombre de la asignación | Requerir etiqueta de rol con valor Infra |
-| Descripción | Requerir etiqueta de función con valor de infraestructura para todos los recursos en el grupo de recursos de Cloud Shell |
-| Politica de ACCION | Activado |
-| | |
+    | Configuración	| Valor |
+    | -- | -- |
+    | Nombre de la asignación | Requerir etiqueta de rol con valor Infra |
+    | Descripción | Requerir etiqueta de función con valor de infraestructura para todos los recursos en el grupo de recursos de Cloud Shell |
+    | Politica de ACCION | Activado |
+    | | |
 
 ![Alt text](./img/6.PNG)
 
@@ -107,11 +107,11 @@ En esta tarea, asignará la política Requerir una etiqueta integrada y su valor
 
 7. Haga clic en **Siguiente** dos veces y establezca los **Parámetros** en los siguientes valores:
 
-| Configuración	| Valor |
-| - - | - - |
-| Nombre de etiqueta | Role |
-| Valor de etiqueta | Infra |
-| | |
+    | Configuración	| Valor |
+    | -- | -- |
+    | Nombre de etiqueta | Role |
+    | Valor de etiqueta | Infra |
+    | | |
 
 8. Haga clic en Siguiente y revise la pestaña Remediación . Deje la casilla de verificación Crear una identidad administrada sin marcar.
 
@@ -129,10 +129,10 @@ En esta tarea, asignará la política Requerir una etiqueta integrada y su valor
 
 12. En la pestaña Aspectos básicos de la hoja Crear cuenta de almacenamiento , verifique que esté usando el grupo de recursos al que se aplicó la política y especifique la siguiente configuración (deje los demás con sus valores predeterminados), haga clic en Revisar y luego haga clic en Crear :
 
-| Configuración | Valor |
-| - - | - - |
-| Nombre de la cuenta de almacenamiento	cualquier combinación globalmente única de entre 3 y 24 letras minúsculas y dígitos, comenzando con una letra |
-| | |
+    | Configuración | Valor |
+    | -- | -- |
+    | Nombre de la cuenta de almacenamiento	cualquier combinación globalmente única de entre 3 y 24 letras minúsculas y dígitos, comenzando con una letra |
+    | | |
 
 ![Alt text](./img/7.PNG)
 
@@ -155,15 +155,15 @@ En esta tarea, usaremos una definición de política diferente para remediar cua
 
 3. En la lista de asignaciones, haga clic en el icono de puntos suspensivos en la fila que representa la etiqueta **Requerir rol** con asignación de política de valor de infraestructura y use el elemento de menú Eliminar asignación para eliminar la asignación.
 
-![Alt text](./img/9.PNG)
+![Alt text](./img/9.png)
 
 4. Haga clic en **Asignar política** y especifique el **Ámbito** haciendo clic en el botón de puntos suspensivos y seleccionando los siguientes valores:
 
-| Configuración | Valor |
-| - - | - - |
-| Suscripción | el nombre de la suscripción de Azure que está utilizando en este laboratorio |
-| Grupo de recursos | el nombre del grupo de recursos que contiene la cuenta de Cloud Shell que identificó en la primera tarea |
-| | |
+    | Configuración | Valor |
+    | -- | -- |
+    | Suscripción | el nombre de la suscripción de Azure que está utilizando en este laboratorio |
+    | Grupo de recursos | el nombre del grupo de recursos que contiene la cuenta de Cloud Shell que identificó en la primera tarea |
+    | | |
 
 5. Para especificar la definición de política , haga clic en el botón de puntos suspensivos y luego busque y seleccione Heredar una etiqueta del grupo de recursos si falta .
 
@@ -171,27 +171,27 @@ En esta tarea, usaremos una definición de política diferente para remediar cua
 
 6. Configure las propiedades Básicas restantes de la tarea especificando las siguientes configuraciones (deje otras con sus valores predeterminados):
 
-| Configuración | Valor |
-| - - | - - |
-| Nombre de la asignación | Heredar la etiqueta de función y su valor de infraestructura del grupo de recursos de Cloud Shell si falta |
-| Descripción | Heredar la etiqueta de función y su valor de infraestructura del grupo de recursos de Cloud Shell si falta |
-| Politica de ACCION | Activado |
-| | |
+    | Configuración | Valor |
+    | -- | -- |
+    | Nombre de la asignación | Heredar la etiqueta de función y su valor de infraestructura del grupo de recursos de Cloud Shell si falta |
+    | Descripción | Heredar la etiqueta de función y su valor de infraestructura del grupo de recursos de Cloud Shell si falta |
+    | Politica de ACCION | Activado |
+    | | |
 
 7. Haga clic en Siguiente dos veces y establezca los **Parámetros** en los siguientes valores:
 
-| Configuración | Valor |
-| - - | - - |
-| Nombre de etiqueta | Role |
-| | |
+    | Configuración | Valor |
+    | -- | -- |
+    | Nombre de etiqueta | Role |
+    | | |
 
 8. Haga clic en Siguiente y, en la pestaña **Remediación** , configure los siguientes ajustes (deje los demás con sus valores predeterminados):
 
-| Configuración | Valor |
-| - - | - - |
-| Crear una tarea de corrección | activado |
-| Política para remediar | Heredar una etiqueta del grupo de recursos si falta |
-| | |
+    | Configuración | Valor |
+    | -- | -- |
+    | Crear una tarea de corrección | activado |
+    | Política para remediar | Heredar una etiqueta del grupo de recursos si falta |
+    | | |
 
 **Nota :** esta definición de política incluye el efecto Modificar .
 
@@ -207,10 +207,10 @@ En esta tarea, usaremos una definición de política diferente para remediar cua
 
 12. En la pestaña Conceptos básicos de la hoja Crear cuenta de almacenamiento , verifique que esté usando el grupo de recursos al que se aplicó la política y especifique la siguiente configuración (deje los demás con sus valores predeterminados) y haga clic en Revisar :
 
-| Configuración	| Valor |
-| - - | - - |
-| Nombre de la cuenta de almacenamiento	| cualquier combinación globalmente única de entre 3 y 24 letras minúsculas y dígitos, comenzando con una letra |
-| | |
+    | Configuración	| Valor |
+    | -- | -- |
+    | Nombre de la cuenta de almacenamiento	| cualquier combinación globalmente única de entre 3 y 24 letras minúsculas y dígitos, comenzando con una letra |
+    | | |
 
 13. Verifica que esta vez haya pasado la validación y haz clic en **Crear** .
 
